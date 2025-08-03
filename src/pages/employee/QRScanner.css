@@ -1,0 +1,53 @@
+.qrscanner-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 10, 10, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.qrscanner-modal {
+  background-color: #fff;
+  width: 90%;
+  max-width: 480px;
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.qrscanner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.qrscanner-title {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.qrscanner-close-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  line-height: 1;
+}
+
+.qrscanner-close-btn:hover {
+  color: #ff4d4d;
+}
+
+.qrscanner-reader {
+  width: 100%;
+  min-height: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+}

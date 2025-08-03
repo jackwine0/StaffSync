@@ -1,0 +1,102 @@
+.salary-summary {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  color: #1a1a1a;
+}
+
+.salary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.salary-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.month-selector {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f7f7f7;
+  color: #1a1a1a;
+}
+
+.salary-breakdown {
+  margin-bottom: 1.5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.net-row {
+  font-weight: bold;
+  border-top: 1px dashed #ccc;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.positive {
+  color: #15803d;
+}
+
+.negative {
+  color: #dc2626;
+}
+
+.salary-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-download,
+.btn-history {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-history {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.btn-download:hover {
+  background: #1a1a1a;
+}
+
+.btn-history:hover {
+  background: #000;
+  color: #fff;
+}
+
+.payment-details .detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.status-paid {
+  font-weight: 600;
+  color: #15803d;
+}

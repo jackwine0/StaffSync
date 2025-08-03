@@ -1,0 +1,133 @@
+.clockin-container {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.clockin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clockin-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.view-all-btn {
+  font-size: 0.875rem;
+  color: #4b5563;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.view-all-btn:hover {
+  color: #000;
+}
+
+.clockin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  max-height: 360px;
+  padding-right: 4px;
+}
+
+.clockin-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.clockin-list::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 6px;
+}
+
+.clockin-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid #f3f4f6;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  background-color: #f9fafb;
+  transition: background 0.2s ease;
+}
+
+.clockin-item:hover {
+  background-color: #f3f4f6;
+}
+
+.clockin-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color:BLACK;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.clockin-info {
+  flex: 1;
+}
+
+.clockin-name {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.clockin-department {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+.clockin-meta {
+  text-align: right;
+}
+
+.clockin-time {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.clockin-status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  text-transform: capitalize;
+}
+
+.clockin-status.on-time {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.clockin-status.late {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.clockin-status.early {
+  background-color: #e0f2fe;
+  color: #1d4ed8;
+}

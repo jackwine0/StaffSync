@@ -1,0 +1,50 @@
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.logo-wrapper.collapsed {
+  justify-content: center;
+  padding: 0.8rem;
+}
+
+.grid-icon {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.grid-dot {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #000;
+  border-radius: 2px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.delay-1 { animation-delay: 0s; }
+.delay-2 { animation-delay: 0.1s; }
+.delay-3 { animation-delay: 0.2s; }
+.delay-4 { animation-delay: 0.3s; }
+.delay-5 { animation-delay: 0.4s; }
+.delay-6 { animation-delay: 0.5s; }
+.delay-7 { animation-delay: 0.6s; }
+.delay-8 { animation-delay: 0.7s; }
+.delay-9 { animation-delay: 0.8s; }
+
+.logo-text-3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}

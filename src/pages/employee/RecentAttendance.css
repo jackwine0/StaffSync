@@ -1,0 +1,124 @@
+.recent-attendance {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  color: #1a1a1a;
+  border: 1px solid #e0e0e0;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.log-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f9fa;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.log-date {
+  text-align: center;
+  min-width: 60px;
+}
+
+.day {
+  font-weight: 500;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.log-times {
+  display: flex;
+  gap: 1.5rem;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.time-block {
+  text-align: center;
+}
+
+.label {
+  font-size: 0.7rem;
+  color: #777;
+  margin-bottom: 0.3rem;
+}
+
+.value {
+  font-weight: 500;
+}
+
+.log-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-tag {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.present {
+  background-color: #e6f4ea;
+  color: #137333;
+}
+
+.absent {
+  background-color: #fce8e6;
+  color: #a50e0e;
+}
+
+.late {
+  background-color: #fff8e1;
+  color: #a87100;
+}
+
+.neutral {
+  background-color: #eee;
+  color: #666;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.present-icon {
+  color: #34a853;
+}
+
+.absent-icon {
+  color: #ea4335;
+}
+
+.summary {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.summary-data {
+  display: flex;
+  gap: 1.5rem;
+}

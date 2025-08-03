@@ -1,0 +1,66 @@
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.admin-stat-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.admin-stat-card:hover {
+  background-color: #f9f9f9;
+}
+
+.admin-stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-stat-icon {
+  font-size: 1.5rem;
+  color: #4b5563;
+}
+
+.admin-stat-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111111;
+}
+
+.admin-stat-body {
+  margin-top: 0.75rem;
+}
+
+.admin-stat-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.admin-stat-change {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.change-positive {
+  color: #15803d;
+}
+
+.change-negative {
+  color: #dc2626;
+}
+
+.change-neutral {
+  color: #4b5563;
+}

@@ -1,0 +1,106 @@
+.hr-actions-container {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.hr-actions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.hr-actions-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.hr-actions-settings {
+  font-size: 1.3rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.hr-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.hr-action-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.hr-action-card:hover {
+  background-color: #f0f0f0;
+  border-color: #dcdcdc;
+}
+
+.hr-action-icon {
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hr-action-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #1a1a1a;
+}
+
+.hr-action-description {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+/* Icon background colors */
+.action-blue .hr-action-icon {
+  background-color: #3b82f6;
+}
+
+.action-purple .hr-action-icon {
+  background-color: #8b5cf6;
+}
+
+.action-green .hr-action-icon {
+  background-color: #22c55e;
+}
+
+.action-yellow .hr-action-icon {
+  background-color: #eab308;
+}
+
+.action-red .hr-action-icon {
+  background-color: #ef4444;
+}
+
+.action-cyan .hr-action-icon {
+  background-color: #06b6d4;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .hr-action-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hr-action-icon {
+    margin-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,166 @@
+/* Base Layout */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Stats Section */
+.stats-section {
+  width: 100%;
+}
+
+/* Main Content Section (60/40 split) */
+.main-content-section {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.calendar-qr-container {
+  flex: 6; /* 60% */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.leave-request-container {
+  flex: 4; /* 40% */
+}
+
+/* QR Section */
+.qr-section {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #1a1a1a;
+}
+
+.qr-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.qr-section-header h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.qr-scan-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.qr-scan-btn:hover {
+  background: #1a1a1a;
+}
+
+.scan-result-box {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #f9f9f9;
+  border: 1px dashed #aaa;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-scan-btn {
+  background: transparent;
+  color: #dc2626;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.qr-scanner-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.qr-scanner-box {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.qr-close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
+
+#qr-reader {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+
+/* Secondary Content Section (70/30 split) */
+.secondary-content-section {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.attendance-container {
+  flex: 7; /* 70% */
+}
+
+.salary-container {
+  flex: 3; /* 30% */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .main-content-section,
+  .secondary-content-section {
+    flex-direction: column;
+  }
+  
+  .calendar-qr-container,
+  .leave-request-container,
+  .attendance-container,
+  .salary-container {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+

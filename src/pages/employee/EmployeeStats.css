@@ -1,0 +1,59 @@
+.employee-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.employee-overview-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.employee-overview-card:hover {
+  background-color: #f9f9f9;
+}
+
+.overview-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview-status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.overview-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.overview-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111111;
+}
+
+.overview-description {
+  font-size: 0.8rem;
+  color: #555;
+}
